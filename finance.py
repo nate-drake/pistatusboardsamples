@@ -13,7 +13,7 @@ while True:
     cu_price = float(current_price) # Declare variable cu_price to convert stock price to floating point value.
     float(share_price) # Convert the price you paid to a floating value too.
     if cu_price >= share_price: # If share price is more than or equal to what you paid, switch on green led on third strip. 
-        sb.shares.lights.red.off()
+        sb.shares.lights.green.on()
     else: # Otherwise switch on the red led:
         sb.shares.lights.red.on()
         sb.shares.lights.green.off()
